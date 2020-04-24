@@ -90,12 +90,12 @@
     .qna_sub_title h2 {font-size: 18px;}
     .qna_title {font-size: 40px; line-height: 40px;}
     .qna_sub_title {padding: 5px 24px;}
-    #qna_content_01 h2 {font-size: 20px;}
-    #qna_content_02 h2 {font-size: 20px;}
-    #qna_content_03 h2 {font-size: 20px;}
-    #qna_content_04 h2 {font-size: 20px;}
-    #qna_content_05 h2 {font-size: 20px;}
-    #qna_content_06 h2 {font-size: 20px;}
+    #qna_content_01 h2 {font-size: 2vw; line-height: 6vw;}
+    #qna_content_02 h2 {font-size: 2vw; line-height: 6vw;}
+    #qna_content_03 h2 {font-size: 2vw; line-height: 6vw;}
+    #qna_content_04 h2 {font-size: 2vw; line-height: 6vw;}
+    #qna_content_05 h2 {font-size: 2vw; line-height: 6vw;}
+    #qna_content_06 h2 {font-size: 2vw; line-height: 6vw;}
     .form_email_container h3 {margin-bottom: 20px;line-height: 30px; }
     .home_email input { height: 44px;}
     .footer_content_container {width: 100%; padding: 0 5%;}
@@ -135,4 +135,9 @@
     .copy_text_container_1 h2 {font-size: 4vw; line-height: 4.8vw;}
     .copy_text_container_2 h1 {font-size: 10vw;}
     .copy_text_container_2 h2 {font-size: 4vw; line-height: 4.8vw;}
+    .qna_sub_title a {font-size: 10vw; line-height: 10vw;}
+}
+
+@media screen and (max-width:320px) {
+    
 }
