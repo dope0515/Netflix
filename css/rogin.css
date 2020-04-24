@@ -24,6 +24,6 @@
     #logo {width: 100px; height: 25px; margin-left: 20px;}
     .rogin {background-image: none;}
     .rogin_container {max-width: 100%;}
-    .rogin_content {width: 100%; padding: 0 20px;}
-    
+    .rogin_content {width: 100%; padding: 0 5%;}
+    .link_detail {display: block;}
 }
