@@ -118,6 +118,7 @@
 @media screen and (max-width:549px) {
     .sub_img_container_text h4 {font-size: 3vw;}
     .sub_img_container_text p {font-size: 2vw;}
+    .hero_container h1 {font-size: 8.4vw; line-height: 12vw;}
 }
     
 
