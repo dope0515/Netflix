@@ -1,4 +1,4 @@
-body {width: 100%; height: 100vh; font-family: Arial, Helvetica, sans-serif; font-weight: 400; line-height: normal;-webkit-font-smoothing: antialiased; background-color: black; color: #fff;}
+body {width: 100%; height: 100vh; font-family: Arial, Helvetica, sans-serif; font-weight: 400; line-height: normal;-webkit-font-smoothing: antialiased; background-color: black; color: #fff; word-break: keep-all;}
 
 h1 {font-size: 64px; font-weight: 700px; line-height: 64px;font-family: 'NetflixSans_W_Bd';}
  .h1_50px {font-size: 50px; font-weight: 700px; line-height: 60px;font-family: 'NetflixSans_W_Rg';}
@@ -11,7 +11,7 @@ p {font-size: 12px; font-family: 'NetflixSans_W_Lt'; line-height: 18px;}
 
 .text_01 {font-size: 14.4px; font-family: 'NetflixSans_W_Lt'; line-height: 24px;}
 .text_02 {font-size: 50px; font-weight: 700px; line-height: 60px;font-family: 'NetflixSans_W_Rg';}
-.text_03 {font-size: 10px; font-family: 'NetflixSans_W_Lt'; line-height: 13px;}
+.text_03 {font-size: 13px; font-family: 'NetflixSans_W_Lt'; line-height: 13px;}
 /*text color*/
 .color_white {color: #fff;}
 .color_black {color: #000;}

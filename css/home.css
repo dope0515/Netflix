@@ -78,7 +78,7 @@
     .copy_text_container_1 {margin-right: 0; width: 100%; text-align: center; height: auto;}
     .copy_text_container_1 h1 {font-size: 40px; line-height: 40px; margin-bottom: 10px;}
     .copy_text_container_1 h2 {font-size: 20px; line-height: 20px;}
-    .video_container {width: 70%;}
+    .video_container {width: 100%;}
     .animation_card_container_02 {flex-direction: column-reverse; width: 100%;}
     .copy_text_container_2 {margin-left: 0; width: 100%; text-align: center;}
     .copy_text_container_2 h1 {font-size: 40px; line-height: 40px; margin-bottom: 10px;}
@@ -140,8 +140,4 @@
     .copy_text_container_2 h2 {font-size: 4vw; line-height: 4.8vw;}
     .qna_sub_title a {font-size: 10vw; line-height: 10vw;}
     ::placeholder {font-size: 4vw;}
-}
-
-@media screen and (max-width:320px) {
-    
 }
