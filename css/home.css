@@ -32,20 +32,18 @@
 .video1 {position: absolute; width: 100%; height: 100%; overflow: hidden; max-width: 73%; max-height: 54%; top: 43%; left: 50%; transform: translate(-50%, -50%);}
 .video2 {position: absolute; width: 100%; height: 100%; overflow: hidden; max-width: 63%; max-height: 47%; top: 32%; left: 50%; transform: translate(-50%, -50%);}
 .sub_img_container {width: 66%; height: 24%; position: absolute; z-index: 3; border: 2px solid rgba(255, 255, 255, 0.25); bottom: 24%; background-color: #000; left: 16%; border-radius: 10px; display: flex; align-items: center;}
-/*Qna*/
-.qna {width: 100%; padding: 70px 45px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; border-bottom: 8px solid #222;}
-.qna_title {width: 100%; text-align: center;}
-.qna_container {width: 68%; display: flex; flex-direction: column; box-sizing: border-box; padding: 60px;}
-.qna_container li { margin-bottom: 8px;}
-.qna_sub_title {width: 100%; display: flex; justify-content: space-between; align-items: center; background-color: #303030; padding: 10px 24px; margin-bottom: 1px;}
-.qna_sub_title h2 {font-size: 20px;}
-#qna_content_01 {background-color: #303030; box-sizing: border-box; overflow: hidden; width: 100%; height: 0px; display: flex; justify-content: center; align-items: center; padding: 0 30px;}
-#qna_content_02 {background-color: #303030; box-sizing: border-box; overflow: hidden; width: 100%; height: 0px; display: flex; justify-content: center; align-items: center; padding: 0 30px;}
-#qna_content_03 {background-color: #303030; box-sizing: border-box; overflow: hidden; width: 100%; height: 0px; display: flex; justify-content: center; align-items: center; padding: 0 30px;}
-#qna_content_04 {background-color: #303030; box-sizing: border-box; overflow: hidden; width: 100%; height: 0px; display: flex; justify-content: center; align-items: center; padding: 0 30px;}
-#qna_content_05 {background-color: #303030; box-sizing: border-box; overflow: hidden; width: 100%; height: 0px; display: flex; justify-content: center; align-items: center; padding: 0 30px;}
-#qna_content_06 {background-color: #303030; box-sizing: border-box; overflow: hidden; width: 100%; height: 0px; display: flex; justify-content: center; align-items: center; padding: 0 30px;}
-.qna_sub_title:hover {cursor: pointer;}
+
+/*accordion*/
+.accordion {width: 100%; padding: 70px 45px; display: flex; align-items: center; flex-direction: column;}
+.accordion_container {padding-bottom: 70px;}
+.accordion_button {width: 800px; height: 60px; background-color: #303030; display: flex; justify-content: space-between; box-sizing: border-box; padding: 0 40px; align-items: center; margin-bottom: 1px;}
+.accordion_button::after {width: 18px; height: 18px; background-image: url(img/icon_plus.svg); content: ''; transition: transform 0.5s;}
+.panel {width: 800px; height: auto; background-color: #303030; padding: 40px; box-sizing: border-box; overflow: hidden; display: none; margin-bottom: 10px;}
+.panel h3 {line-height: 1.6;}
+.icon_plus {width: 24px; height: 24px; transition: transform 0.3s;}
+.active::after {transform: rotate(-45deg);}
+.email_box {width: 1000px;}
+
 
 /*footer*/
 .footer_container {width: 100%; padding: 70px 45px; display: flex; justify-content: center;}
@@ -84,18 +82,13 @@
     .copy_text_container_2 h1 {font-size: 40px; line-height: 40px; margin-bottom: 10px;}
     .copy_text_container_2 h2 {font-size: 20px; line-height: 20px;}
 
-    /*qna*/
-    .qna_container {width: 100%; padding-left: 0; padding-right: 0;}
-    .qna_container li {width: 100%;}
-    .qna_sub_title h2 {font-size: 18px;}
-    .qna_title {font-size: 40px; line-height: 40px;}
-    .qna_sub_title {padding: 5px 24px;}
-    #qna_content_01 h2 {font-size: 2vw; line-height: 6vw;}
-    #qna_content_02 h2 {font-size: 2vw; line-height: 6vw;}
-    #qna_content_03 h2 {font-size: 2vw; line-height: 6vw;}
-    #qna_content_04 h2 {font-size: 2vw; line-height: 6vw;}
-    #qna_content_05 h2 {font-size: 2vw; line-height: 6vw;}
-    #qna_content_06 h2 {font-size: 2vw; line-height: 6vw;}
+    /*accordion*/
+    .accordion_button {width: 100%;}
+    .accordion_button  h3 {font-size: 2vw; line-height: 6vw;}
+    .accordion_container {width: 90%;}
+    .email_box {width: 100%;}
+    .panel {width: 100%;}
+    .panel h3 {font-size: 2vw; line-height: 6vw;}
     .form_email_container h3 {margin-bottom: 20px;line-height: 30px; }
     .home_email input { height: 44px;}
     .footer_content_container {width: 100%; padding: 0 5%;}
@@ -128,6 +121,8 @@
     .home_header button {width: 70px; height: 30px;line-height: 30px;}
     .home_email button {width: 30vw; height: 6vh;}
     .home_email button h5 {font-size: 4vw;}
+    .home_hero {height: auto;}
+    .hero_container {height: auto;}
     .hero_container h1 {font-size: 8.4vw; line-height: 12vw;}
     .hero_container h2 {font-size: 5.5vw; line-height: 7vw;}
     .home_email h5 {font-size: 4vw;}
