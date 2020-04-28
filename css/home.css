@@ -18,7 +18,7 @@
 
 /*animation_card*/
 .animation_card {width: 100%; height: auto; border-bottom: 8px solid #222; padding: 70px 45px; box-sizing: border-box;}
-.animation_card_container {max-width: 1100px; height: 460px; display: flex; justify-content: center; margin: 0 auto;}
+.animation_card_container {max-width: 1100px; height: 460px; display: flex; justify-content: center; margin: 0 auto; align-items: center;}
 .animation_card_container_02 {max-width: 1100px; height: 460px; display: flex; justify-content: center; margin: 0 auto;}
 .copy_text_container_1 {width: 52%; height: 100%; display: flex; flex-direction: column; justify-content: center; margin-right: 48px;}
 .copy_text_container_2 {width: 52%; height: 100%; display: flex; flex-direction: column; justify-content: center; margin-left: 48px;}
@@ -29,20 +29,21 @@
 
 .video_container {width: 48%; height: auto; position: relative; margin: 0 auto;}
 .tv_img {position: relative; z-index: 2; width: 100%; height: auto;}
-.video1 {position: absolute; width: 100%; height: 100%; overflow: hidden; max-width: 73%; max-height: 54%; top: 43%; left: 50%; transform: translate(-50%, -50%);}
-.video2 {position: absolute; width: 100%; height: 100%; overflow: hidden; max-width: 63%; max-height: 47%; top: 32%; left: 50%; transform: translate(-50%, -50%);}
+.video1 {position: absolute; width: 100%; height: 100%; overflow: hidden; max-width: 73%; max-height: 54%; top: 46%; left: 50%; transform: translate(-50%, -50%);}
+.video2 {position: absolute; width: 100%; height: 100%; overflow: hidden; max-width: 63%; max-height: 47%; top: 34%; left: 50%; transform: translate(-50%, -50%);}
 .sub_img_container {width: 66%; height: 24%; position: absolute; z-index: 3; border: 2px solid rgba(255, 255, 255, 0.25); bottom: 24%; background-color: #000; left: 16%; border-radius: 10px; display: flex; align-items: center;}
 
 /*accordion*/
 .accordion {width: 100%; padding: 70px 45px; display: flex; align-items: center; flex-direction: column;}
 .accordion_container {padding-bottom: 70px;}
-.accordion_button {width: 800px; height: 60px; background-color: #303030; display: flex; justify-content: space-between; box-sizing: border-box; padding: 0 40px; align-items: center; margin-bottom: 1px;}
-.accordion_button::after {width: 18px; height: 18px; background-image: url(img/icon_plus.svg); content: ''; transition: transform 0.5s;}
-.panel {width: 800px; height: auto; background-color: #303030; padding: 40px; box-sizing: border-box; overflow: hidden; display: none; margin-bottom: 10px;}
+.accordion_button {width: 800px; height: 60px; background-color: #303030; display: flex; justify-content: space-between; box-sizing: border-box; padding: 0 40px; align-items: center; margin-bottom: 10px;}
+.accordion_button::after {width: 18px; height: 18px; background-image: url(../img/icon_plus.svg); content: ''; transition: transform 0.5s;}
+.panel {width: 800px; height: auto; background-color: #303030; padding: 40px; box-sizing: border-box; overflow: hidden; display: none; margin: -9px 0 10px;}
 .panel h3 {line-height: 1.6;}
 .icon_plus {width: 24px; height: 24px; transition: transform 0.3s;}
 .active::after {transform: rotate(-45deg);}
-.email_box {width: 1000px;}
+.email_box {width: 100%;}
+.email_box h3 {text-align: center;}
 
 
 /*footer*/
@@ -58,9 +59,12 @@
 .footer_lang h4 {padding-left: 20px; box-sizing: border-box;}
 .footer_address :first-child {margin-bottom: 20px;}
 .footer_address :last-child:hover {text-decoration: underline;}
+.footer_lang_content {padding-right: 10px;}
+i {padding-left: 10px;}
 
 /*Media Query*/
 @media screen and (max-width:949px) {
+    .home_hero {height: auto;}
     .form_email_container {flex-direction: column-reverse;}
     .home_email {flex-direction: column; height: auto;}
     .home_email input {border-radius: 4px; margin-bottom: 20px; height: 60px;}
@@ -72,25 +76,27 @@
 
     /*animation_card*/
     
-    .animation_card_container {width: 100%; flex-direction: column;}
+    .animation_card_container {width: 100%; flex-direction: column; height: auto;}
     .copy_text_container_1 {margin-right: 0; width: 100%; text-align: center; height: auto;}
     .copy_text_container_1 h1 {font-size: 40px; line-height: 40px; margin-bottom: 10px;}
     .copy_text_container_1 h2 {font-size: 20px; line-height: 20px;}
-    .video_container {width: 100%;}
-    .animation_card_container_02 {flex-direction: column-reverse; width: 100%;}
+    .video_container {width: 100%; height: auto;}
+    .animation_card_container_02 {flex-direction: column-reverse; width: 100%; height: auto;}
     .copy_text_container_2 {margin-left: 0; width: 100%; text-align: center;}
     .copy_text_container_2 h1 {font-size: 40px; line-height: 40px; margin-bottom: 10px;}
     .copy_text_container_2 h2 {font-size: 20px; line-height: 20px;}
 
     /*accordion*/
-    .accordion_button {width: 100%;}
-    .accordion_button  h3 {font-size: 2vw; line-height: 6vw;}
+    .accordion {padding: 10vw 3vw;}
+    .accordion_button {width: 100%; padding: 0 4vw;}
+    .accordion_button h3 {font-size: 14px;}
     .accordion_container {width: 90%;}
     .email_box {width: 100%;}
     .panel {width: 100%;}
-    .panel h3 {font-size: 2vw; line-height: 6vw;}
+    .panel h3 {font-size: 14px;}
     .form_email_container h3 {margin-bottom: 20px;line-height: 30px; }
     .home_email input { height: 44px;}
+    .footer_container {padding: 10vw 3vw;}
     .footer_content_container {width: 100%; padding: 0 5%;}
     .footer_content li {width: 33.3333%;}
     span {display: block; text-align: center;}
@@ -109,30 +115,27 @@
 }
 
 @media screen and (max-width:549px) {
-    .sub_img_container_text h4 {font-size: 3vw;}
-    .sub_img_container_text p {font-size: 2vw;}
-    .hero_container h1 {font-size: 8.4vw; line-height: 12vw;}
+
 }
     
 
 @media screen and (max-width:480px) {
     #logo {width: 100px; height: 30px;}
     .home_header {padding: 6%;}
-    .home_header button {width: 70px; height: 30px;line-height: 30px;}
+    .home_header button {width: 70px; height: 30px; line-height: 30px;}
     .home_email button {width: 30vw; height: 6vh;}
-    .home_email button h5 {font-size: 4vw;}
-    .home_hero {height: auto;}
+    .home_hero {height: auto; padding: 20vw 3vw;}
     .hero_container {height: auto;}
-    .hero_container h1 {font-size: 8.4vw; line-height: 12vw;}
-    .hero_container h2 {font-size: 5.5vw; line-height: 7vw;}
-    .home_email h5 {font-size: 4vw;}
-    .form_email_container h3 {font-size: 4vw; line-height: 6.5vw;}
-    .animation_card {padding: 3vw 45px;}
-    .qna_sub_title h2 {font-size: 3.2vw; line-height: 3.5vw;}
-    .copy_text_container_1 h1 {font-size: 10vw;}
-    .copy_text_container_1 h2 {font-size: 4vw; line-height: 4.8vw;}
-    .copy_text_container_2 h1 {font-size: 10vw;}
-    .copy_text_container_2 h2 {font-size: 4vw; line-height: 4.8vw;}
-    .qna_sub_title a {font-size: 10vw; line-height: 10vw;}
-    ::placeholder {font-size: 4vw;}
+    .hero_container h1 {font-size: 36px; line-height: 40px;}
+    .hero_container h2 {font-size: 14px; line-height: 20px;}
+    .hero_container h3 {font-size: 14px; line-height: 20px; margin-top: 30px;}
+    .animation_card {padding: 10vw 6vw;}
+    .copy_text_container_1 h1 {font-size: 30px;}
+    .copy_text_container_1 h2 {font-size: 18px; line-height: 24px;}
+    .copy_text_container_2 h1 {font-size: 30px;}
+    .copy_text_container_2 h2 {font-size: 18px; line-height: 24px;}
+}
+
+@media screen and (max-width:375px) {
+
 }
