@@ -42,7 +42,7 @@
 .panel h3 {line-height: 1.6;}
 .icon_plus {width: 24px; height: 24px; transition: transform 0.3s;}
 .active::after {transform: rotate(-45deg);}
-.email_box {width: 100%;}
+.email_box {width: 80%;}
 .email_box h3 {text-align: center;}
 
 
